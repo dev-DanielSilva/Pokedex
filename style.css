@@ -24,7 +24,7 @@ header {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -145,8 +145,13 @@ footer a:hover {
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
+  .pokemon-section {
+    flex-wrap: wrap; /* Habilita quebra de linha para itens */
+    justify-content: space-between; /* Espaça os itens entre si */
+  }
   .item-resultado {
-    max-width: 100%; /* Ocupa 100% da tela em dispositivos menores */
+    width: 48%; /* Define a largura de cada item como 48% da tela */
+    margin-bottom: 2rem; /* Aumenta o espaçamento entre itens */
   }
 }
