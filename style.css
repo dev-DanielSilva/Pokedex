@@ -88,7 +88,9 @@ main {
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  width: auto; /* Permite que o botão cresça com o conteúdo por padrão */
 }
+
 
 .search-section button:hover {
   background-color: #962a31;
@@ -187,12 +189,9 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-  #campo-pesquisa {
-    width: 95%;
-  }
-
   .search-section button {
-    width: 95%;
-    /* Torna o botão responsivo no mobile */
+    width: 150px; /* Largura fixa para dispositivos móveis */
+    padding: 10px 20px; /* Ajuste o padding se necessário para melhor visualização no mobile */
+    font-size: 16px; /* Ajuste o tamanho da fonte se necessário para melhor legibilidade */
   }
 }
