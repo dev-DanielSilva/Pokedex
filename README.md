@@ -1,4 +1,4 @@
-## ⚡ **Sua Pokédex Personalizada: Capture Todos Eles!** ⚡
+## ⚡ **Pokédex Personalizada: Capture Todos Eles!** ⚡
 
 **Prepare-se para uma jornada épica pelo mundo Pokémon!** 
 
