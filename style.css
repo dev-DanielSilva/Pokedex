@@ -9,6 +9,7 @@
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -24,7 +25,8 @@ header {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  justify-content: center;
+  /* Centraliza o conteúdo horizontalmente */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -47,20 +49,34 @@ main {
   margin-right: auto;
 }
 
+
 .search-section {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 2rem;
+  justify-content: center;
+  /* Centraliza o conteúdo */
+  width: 100%;
+  /* Faz a seção de busca ocupar 100% da largura */
+  max-width: 600px;
+  /* Define um tamanho máximo para a seção */
+  margin: 0 auto;
+  /* Centraliza horizontalmente */
 }
 
-.search-section input {
-  padding: 0.75rem;
-  width: 300px;
-  border: 2px solid #ff3e4d;
+#campo-pesquisa {
+  width: 100%;
+  /* Para garantir que ele ocupe a largura máxima disponível */
+  max-width: 300px;
+  /* Define uma largura máxima */
+  min-width: 200px;
+  /* E uma largura mínima */
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1rem;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  /* Garante que padding e borda sejam incluídos no tamanho total */
 }
 
 .search-section button {
@@ -80,11 +96,14 @@ main {
 
 .pokemon-section {
   display: flex;
-  flex-direction: column; /* Coloca os itens em uma única coluna */
-  gap: 1rem; /* Espaçamento entre os itens */
-  align-items: center; /* Centraliza os itens horizontalmente */
+  padding: 10px;
+  flex-direction: column;
+  /* Coloca os itens em uma única coluna */
+  gap: 1rem;
+  /* Espaçamento entre os itens */
+  align-items: center;
+  /* Centraliza os itens horizontalmente */
 }
-
 
 .item-resultado {
   background-color: white;
@@ -93,8 +112,10 @@ main {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 100%; /* Faz o item preencher a largura total disponível */
-  max-width: 600px; /* Define um tamanho máximo para que os itens não fiquem muito largos */
+  width: 100%;
+  /* Faz o item preencher a largura total disponível */
+  max-width: 600px;
+  /* Define um tamanho máximo para que os itens não fiquem muito largos */
 }
 
 .item-resultado h2 {
@@ -125,8 +146,12 @@ footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
   width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  margin-top: auto; /* Garante que o footer seja empurrado para o final da página */
 }
 
 footer p {
@@ -147,11 +172,27 @@ footer a:hover {
 /* Responsividade */
 @media (min-width: 768px) and (max-width: 992px) {
   .pokemon-section {
-    flex-wrap: wrap; /* Habilita quebra de linha para itens */
-    justify-content: space-between; /* Espaça os itens entre si */
+    flex-wrap: wrap;
+    /* Habilita quebra de linha para itens */
+    justify-content: space-between;
+    /* Espaça os itens entre si */
   }
+
   .item-resultado {
-    width: 48%; /* Define a largura de cada item como 48% da tela */
-    margin-bottom: 2rem; /* Aumenta o espaçamento entre itens */
+    width: 48%;
+    /* Define a largura de cada item como 48% da tela */
+    margin-bottom: 2rem;
+    /* Aumenta o espaçamento entre itens */
+  }
+}
+
+@media (max-width: 768px) {
+  #campo-pesquisa {
+    width: 95%;
+  }
+
+  .search-section button {
+    width: 95%;
+    /* Torna o botão responsivo no mobile */
   }
 }
