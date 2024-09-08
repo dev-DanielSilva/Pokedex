@@ -6,7 +6,8 @@
   font-family: 'Arial', sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -42,7 +43,8 @@ header {
 }
 
 main {
-  flex: 1; /* Faz o main crescer para ocupar o espaço restante */
+  flex: 1;
+  /* Faz o main crescer para ocupar o espaço restante */
   padding: 2rem;
   max-width: 1200px;
   margin-left: auto;
@@ -65,12 +67,7 @@ main {
 }
 
 #campo-pesquisa {
-  width: 100%;
-  /* Para garantir que ele ocupe a largura máxima disponível */
-  max-width: 300px;
-  /* Define uma largura máxima */
-  min-width: 200px;
-  /* E uma largura mínima */
+  width: 200px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -88,7 +85,8 @@ main {
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  width: auto; /* Permite que o botão cresça com o conteúdo por padrão */
+  width: auto;
+  /* Permite que o botão cresça com o conteúdo por padrão */
 }
 
 
@@ -153,7 +151,8 @@ footer {
   position: relative;
   bottom: 0;
   left: 0;
-  margin-top: auto; /* Garante que o footer seja empurrado para o final da página */
+  margin-top: auto;
+  /* Garante que o footer seja empurrado para o final da página */
 }
 
 footer p {
@@ -190,8 +189,11 @@ footer a:hover {
 
 @media (max-width: 768px) {
   .search-section button {
-    width: 150px; /* Largura fixa para dispositivos móveis */
-    padding: 10px 20px; /* Ajuste o padding se necessário para melhor visualização no mobile */
-    font-size: 16px; /* Ajuste o tamanho da fonte se necessário para melhor legibilidade */
+    width: 150px;
+    /* Largura fixa para dispositivos móveis */
+    padding: 10px 20px;
+    /* Ajuste o padding se necessário para melhor visualização no mobile */
+    font-size: 16px;
+    /* Ajuste o tamanho da fonte se necessário para melhor legibilidade */
   }
 }
