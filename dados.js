@@ -6,7 +6,7 @@ let pokemons = [
     "image": "assets/bulbasaur.png",
     "tipo": ["Grama", "Veneno"],
     "evolucao": "Ivysaur",
-    "tags": ["inicial", "grande planta", "evolução"]
+    "tags": ["inicial", "grande planta", "semente"]
   },
   {
     "nome": "Ivysaur",
@@ -15,7 +15,7 @@ let pokemons = [
     "image": "assets/ivysaur.png",
     "tipo": ["Grama", "Veneno"],
     "evolucao": "Venusaur",
-    "tags": ["evolução", "grande planta", "transição"]
+    "tags": ["evolução", "grande planta", "semente"]
   },
   {
     "nome": "Venusaur",
@@ -24,7 +24,7 @@ let pokemons = [
     "image": "assets/venusaur.png",
     "tipo": ["Grama", "Veneno"],
     "evolucao": null,
-    "tags": ["evolução final", "gigante", "solar"]
+    "tags": ["evolução final", "gigante", "semente"]
   },
   {
     "nome": "Charmander",
